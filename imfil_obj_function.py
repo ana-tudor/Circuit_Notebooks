@@ -59,12 +59,6 @@ spinz_operator = jordan_wigner(sum([FermionOperator( ((2*i, 1), (2*i, 0)), 0.5)
                                     for i in range(active_qubits // 2)], FermionOperator()))
 spinz_operator.compress()
 
-n_amplitudes = int(uccsd_singlet_paramsize(active_qubits,
-                                       active_electrons))
-#         print("Running CAS({},{}) with {} coupled cluster amplitudes".format(n_electrons, n_orbitals,n_amplitudes))
-current_amplitudes = [0.0] * n_amplitudes + 0.001 * randn(n_amplitudes)
-
-
 
 molecule = MolecularData(filename='C:\Users\hp\Documents\GitHub\Circuit_Notebooks\data\H4-C2_DZP_singlet_ethylene_1.57080.hdf5')
 # print("Number of spatial basis functions: {}".format(molecule.n_orbitals))
@@ -87,13 +81,8 @@ qubit_hamiltonian.compress()
 # Set standard UCCSD Compiler engine
 compiler_engine = uccsd_trotter_engine()
 
-n_amplitudes = int(uccsd_singlet_paramsize(molecule.n_qubits, molecule.n_electrons))
-#         print("Running CAS({},{}) with {} coupled cluster amplitudes".format(n_electrons, n_orbitals,n_amplitudes))
-current_amplitudes = [0.0] * n_amplitudes + 0.001 * randn(n_amplitudes)
-
-
 input_amplitudes = np.array([float(sys.argv[1]), float(sys.argv[2])])
-print(input_amplitudes)
+# print(input_amplitudes)
 
 from projectq.ops.noise_traits import scale
 print(scale)

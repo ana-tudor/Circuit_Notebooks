@@ -84,11 +84,6 @@ qubit_hamiltonian.compress()
 # Set standard UCCSD Compiler engine
 compiler_engine = uccsd_trotter_engine()
 
-n_amplitudes = int(uccsd_singlet_paramsize(molecule.n_qubits, molecule.n_electrons))
-#         print("Running CAS({},{}) with {} coupled cluster amplitudes".format(n_electrons, n_orbitals,n_amplitudes))
-current_amplitudes = [0.0] * n_amplitudes + 0.001 * randn(n_amplitudes)
-
-
 
 def energy_objective(packed_amplitudes):
 
