@@ -133,7 +133,7 @@ else:
 
 '''figure out how to format params'''
 
-print(ansatz.param_bounds)
+print(ansatz.param_bounds())
 
 # params = np.loadtxt('C:\Users\hp\Documents\GitHub\CircuitNotebooks\Scripts\input.txt', \
 #         dtype=np.dtype('d'))
@@ -141,4 +141,4 @@ print(ansatz.param_bounds)
 
 ''' Run study using blackbox, evaluate at new x'''
 
-# print(study.value_of(params))
+print(study.value_of(numpy.array([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])))
