@@ -4,6 +4,7 @@ import time
 
 import numpy
 import matplotlib.pyplot as plt
+import sys
 
 import cirq
 import openfermion
@@ -133,12 +134,29 @@ else:
 
 '''figure out how to format params'''
 
-print(ansatz.param_bounds())
+# print(ansatz.param_bounds())
 
 # params = np.loadtxt('C:\Users\hp\Documents\GitHub\CircuitNotebooks\Scripts\input.txt', \
 #         dtype=np.dtype('d'))
-
+params = numpy.array([float(sys.argv[1]), float(sys.argv[2]), 
+                    float(sys.argv[3]), float(sys.argv[4]),
+                    float(sys.argv[5]), float(sys.argv[6]),
+                    float(sys.argv[7]), float(sys.argv[8]),
+                    float(sys.argv[9]), float(sys.argv[10]),
+                    float(sys.argv[11]), float(sys.argv[12]),
+                    float(sys.argv[13]), float(sys.argv[14]),
+                    float(sys.argv[15]), float(sys.argv[16]),
+                    ])
 
 ''' Run study using blackbox, evaluate at new x'''
+print(params)
 
-print(study.value_of(numpy.array([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])))
+result=study.value_of(params)
+print(result)
+
+study.save()
+
+name = 'out_param_energies.txt'
+
+with open(name, 'wb') as f:
+    numpy.savetxt(f, [result, 0, 1])
