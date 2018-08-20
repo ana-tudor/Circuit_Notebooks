@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5D094D4-DF51-3584-82EF-A9B452306AFE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cint</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cint.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cint</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cint.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cint</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cint.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cint</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cint.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cint</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\include;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint -BC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build --check-stamp-file C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeSystem.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\cmake\FindQUADMATH.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\include\cint.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\config.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint -BC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build --check-stamp-file C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeSystem.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\cmake\FindQUADMATH.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\include\cint.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\config.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint -BC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build --check-stamp-file C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeSystem.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\cmake\FindQUADMATH.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\include\cint.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\config.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint -BC:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build --check-stamp-file C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\3.12.1\CMakeSystem.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\cmake\FindQUADMATH.cmake;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\include\cint.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\config.h.in;C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\c2f.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cart2sph.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint_bas.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\fblas.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\misc.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\optimizer.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\rys_roots.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint2c2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g2c2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g3c2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g3c1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\breit.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint4c1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g4c1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint1e_a.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c1e_a.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\breit1.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\dkb.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\gaunt1.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\grad1.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\grad2.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\hess.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\int3c1e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\int3c2e.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor1.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor2.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor3.c" />
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor4.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\ZERO_CHECK.vcxproj">
+      <Project>{8768FE48-4D31-3B0F-ACB0-B03379DBD90D}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

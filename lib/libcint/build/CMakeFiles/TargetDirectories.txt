@@ -1,0 +1,4 @@
+C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/cint.dir
+C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/INSTALL.dir
+C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/ZERO_CHECK.dir
