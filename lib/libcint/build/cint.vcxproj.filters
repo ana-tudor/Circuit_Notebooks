@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\c2f.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cart2sph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint_bas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\fblas.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\optimizer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\rys_roots.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint2c2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g2c2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g3c2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g3c1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\breit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint4c1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\g4c1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint1e_a.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\cint3c1e_a.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\breit1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\dkb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\gaunt1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\grad1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\grad2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\hess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\int3c1e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\int3c2e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\src\autocode\intor4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D114D086-1A49-3750-9088-225D8C1BD848}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

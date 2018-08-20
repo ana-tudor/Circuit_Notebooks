@@ -1,7 +1,8 @@
 #-----
 import random, math
 
-scale = 3E-3
+# scale = 3E-5
+scale = 0
 
 Rx_pdf       = random.gauss
 Rx_pdf_args  = 0., scale*math.pi

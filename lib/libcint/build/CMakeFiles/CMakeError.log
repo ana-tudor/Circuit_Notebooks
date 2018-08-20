@@ -1,0 +1,80 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_66276.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.3.409.57025 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2018 4:19:47 PM.
+Project "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_66276.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_66276.dir\Debug\".
+  Creating directory "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_66276.dir\Debug\cmTC_66276.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_66276.dir\Debug\cmTC_66276.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_66276.dir\Debug\\" /Fd"cmTC_66276.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.11.25508.2 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_66276.dir\Debug\\" /Fd"cmTC_66276.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\Debug\cmTC_66276.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp/Debug/cmTC_66276.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp/Debug/cmTC_66276.lib" /MACHINE:X86 /SAFESEH  /machine:X86 C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018\windows\mkl\lib cmTC_66276.dir\Debug\testCCompiler.obj
+LINK : fatal error LNK1104: cannot open file 'C:\Program.obj' [C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_66276.vcxproj]
+Done Building Project "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_66276.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_66276.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1104: cannot open file 'C:\Program.obj' [C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_66276.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.54
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6ee62.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.3.409.57025 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2018 4:19:59 PM.
+Project "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_6ee62.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_6ee62.dir\Debug\".
+  Creating directory "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_6ee62.dir\Debug\cmTC_6ee62.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_6ee62.dir\Debug\cmTC_6ee62.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6ee62.dir\Debug\\" /Fd"cmTC_6ee62.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.11.25508.2 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6ee62.dir\Debug\\" /Fd"cmTC_6ee62.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\Debug\cmTC_6ee62.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp/Debug/cmTC_6ee62.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/hp/Documents/GitHub/Circuit_Notebooks/lib/libcint/build/CMakeFiles/CMakeTmp/Debug/cmTC_6ee62.lib" /MACHINE:X86 /SAFESEH  /machine:X86 C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018\windows\mkl\lib cmTC_6ee62.dir\Debug\testCCompiler.obj
+LINK : fatal error LNK1104: cannot open file 'C:\Program.obj' [C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_6ee62.vcxproj]
+Done Building Project "C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_6ee62.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_6ee62.vcxproj" (default target) (1) ->
+(Link target) -> 
+  LINK : fatal error LNK1104: cannot open file 'C:\Program.obj' [C:\Users\hp\Documents\GitHub\Circuit_Notebooks\lib\libcint\build\CMakeFiles\CMakeTmp\cmTC_6ee62.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:02.30
+
+
