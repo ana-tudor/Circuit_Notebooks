@@ -62,6 +62,15 @@ def generate_molecular_hamiltonian(geometry,
 
     return molecule.get_molecular_hamiltonian(occupied_indices, active_indices)
 
+def cost_with_noise(noise, variance):
+    if noise == 0.0:
+        return None
+    return variance/noise**2 * 2/numpy.pi
+
+def eval_with_noise(study, noise, params):
+    cost = cost_with_noise(noise, study.objective.variance_bound)
+    return study.value_of(params) + study.objective.noise(cost)
+
 # Create or load a variational study
 # ----------------------------------
 
@@ -132,12 +141,13 @@ else:
         len(study.ansatz.qubits), study.num_params))
 
 
-'''figure out how to format params'''
+hamiltonian_sparse = openfermion.get_sparse_operator(study.objective.hamiltonian)
+energy, _ = openfermion.get_ground_state(hamiltonian_sparse)
+
+print(energy)
 
 # print(ansatz.param_bounds())
 
-# params = np.loadtxt('C:\Users\hp\Documents\GitHub\CircuitNotebooks\Scripts\input.txt', \
-#         dtype=np.dtype('d'))
 params = numpy.array([float(sys.argv[1]), float(sys.argv[2]), 
                     float(sys.argv[3]), float(sys.argv[4]),
                     float(sys.argv[5]), float(sys.argv[6]),
@@ -148,10 +158,12 @@ params = numpy.array([float(sys.argv[1]), float(sys.argv[2]),
                     float(sys.argv[15]), float(sys.argv[16]),
                     ])
 
+noise = float(sys.argv[17])
+
 ''' Run study using blackbox, evaluate at new x'''
 print(params)
-
-result=study.value_of(params)
+print(noise)
+result=eval_with_noise(study,noise,params)
 print(result)
 
 study.save()
