@@ -16,8 +16,12 @@ options=imfil_optset;
 % options=imfil_optset('add_new_directions','tangent_directions',options);
 
 
+disp(length(2));
+a = 2;
+disp(a(:,3));
+
 % Read in initial values
-ampID = fopen('/home/ana-tudor/Circuit_Notebooks/imfil/16_params_init.txt');
+ampID = fopen('/home/ana-tudor/Circuit_Notebooks/ipy_notebooks/imfil/16_params_init.txt');
 initamps = [];
 
 % init = strrep(fgetl(ampID),';',' ');
@@ -35,7 +39,7 @@ end
 fclose(ampID);
 
 disp(initamps)
-outname='16_params_out.csv';
+outname='16_params_out_larger_noise.csv';
 
 initamps2 = [];
 results = [];
@@ -44,7 +48,7 @@ iterations = [];
 
 %Try multiple initial values 
 n=1;
-while n < 11
+while n < 3
     disp(size(initamps));
     initvec = initamps(1:end,n);
     disp(initvec);
@@ -52,7 +56,7 @@ while n < 11
     %Inner loop feeds results of previous minimization to check for
     %convergence
     inner=1;
-    while inner < 4
+    while inner < 5
     
         initamps2 = [initamps2; initvec.'];
         bounds1=[-1. 1.;-1. 1.;-1. 1.;-1. 1.]
@@ -109,7 +113,7 @@ function [fout, ifail, icount] = func(x,h)
     
     %!C:\Users\hp\Documents\GitHub\CircuitNotebooks\Scripts\python.exe C:\Users\hp\Documents\GitHub\Circuit_Notebooks\sample_obj_function.py
 
-    str = strcat("/home/ana-tudor/quantum/bin/python3.6 ", "/home/ana-tudor/Circuit_Notebooks/imfil/16_param_obj_func.py ");
+    str = strcat("/home/ana-tudor/quantum/bin/python3.6 ", "/home/ana-tudor/Circuit_Notebooks/ipy_notebooks/imfil/16_param_obj_func.py ");
     str = strcat(str, num2str(x(1), 12), " ", num2str(x(2), 12), " ");
     str = strcat(str, num2str(x(3), 12), " ", num2str(x(4), 12), " ");
     str = strcat(str, num2str(x(5), 12), " ", num2str(x(6), 12), " ");
@@ -117,12 +121,13 @@ function [fout, ifail, icount] = func(x,h)
     str = strcat(str, num2str(x(9), 12), " ", num2str(x(10), 12), " ");
     str = strcat(str, num2str(x(11), 12), " ", num2str(x(12), 12), " ");
     str = strcat(str, num2str(x(13), 12), " ", num2str(x(14), 12), " ");
-    str = strcat(str, num2str(x(15), 12), " ", num2str(x(16), 12));
+    str = strcat(str, num2str(x(15), 12), " ", num2str(x(16), 12), " ");
+    str = strcat(str, num2str(0.001));
     disp(str);
     system(str);
     
     % Read in results
-    outID = fopen("/home/ana-tudor/Circuit_Notebooks/imfil/out_param_energies.txt",'r');
+    outID = fopen("/home/ana-tudor/Circuit_Notebooks/ipy_notebooks/imfil/out_param_energies.txt",'r');
     [A,count] = fscanf(outID,"%f");
     
     disp(A(1));
